@@ -4,7 +4,7 @@ Built for the **Zero-Human Company Hackathon** (Terac × Whop, NYC, Oct 24 2026)
 
 **The pitch:** every builder in this room is shipping a landing page today, and every one of those pages has conversion problems. LaunchRoast sells a $9, 3-minute, brutally honest AI teardown — a roast, 10 fixes ranked by conversion impact, and a rewritten hero section. Payment → delivery → QA → marketing all run without a human on payroll.
 
-🌐 **Live:** https://launchroast.vercel.app · 💳 **Payments:** Whop · 🧑‍🔬 **Human-in-the-loop:** Terac
+🌐 **Live:** https://launchroast-nine.vercel.app · 💳 **Payments:** [Whop](https://whop.com/biomedsai/launchroast-landing-page-teardown/) · 🧑‍🔬 **Human-in-the-loop:** Terac · 🎬 **Demo video:** https://youtu.be/MA4VmyQIez0
 
 ---
 
