@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { validateLicense } from "@/lib/whop";
 import { fetchPageContent, streamRoast } from "@/lib/roast";
+import { findCompetitors, competitorContext } from "@/lib/exa";
 import { queueRoastQA } from "@/lib/terac";
 
 export const runtime = "nodejs";
@@ -31,8 +32,12 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Exa: ground the roast in the customer's real competitive landscape.
+  const title = pageContent.match(/^TITLE: (.*)$/m)?.[1] ?? "";
+  const competitors = await findCompetitors(title, url);
+
   const encoder = new TextEncoder();
-  const stream = streamRoast(pageContent);
+  const stream = streamRoast(pageContent + competitorContext(competitors));
   const chunks: string[] = [];
 
   const readable = new ReadableStream({

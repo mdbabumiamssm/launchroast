@@ -8,6 +8,21 @@ Built for the **Zero-Human Company Hackathon** (Terac × Whop, NYC, Oct 24 2026)
 
 ---
 
+## Tracks targeted
+
+| Track | How we qualify |
+|---|---|
+| **Best Agent-Run Company** | Real $9 sales through Whop; CEO agent autonomously prices, markets, and operates |
+| **Best Use of Terac** | A/B study on Terac's General Population panel decided the product's voice — clear before/after (see below) |
+| **Best Use of Exa** | Every roast uses Exa search to pull the customer's real competitive landscape into the critique |
+| **Best Overall** | Zero-human loop: sell → fulfill → QA → market → iterate |
+
+## The Terac before/after (human-in-the-loop)
+
+1. **Before:** `npm run study <url>` generates the same landing-page critique in two product styles — Variant A "Brutal Roast" vs Variant B "Straight-Talk Coach" (`study/brief.md`).
+2. **The humans:** a Terac study (General Population) asks panelists which version they'd pay $9 for, trust more, and share — plus what would make it worth $19.
+3. **After:** the winning style ships as the production prompt, the vote counts and the decision are published in the public [Boardroom](/boardroom), and the $19-upsell answers seed the next product decision. Separately, every delivered roast files a per-task Terac QA review.
+
 ## How the company runs itself
 
 ```
@@ -36,7 +51,8 @@ Built for the **Zero-Human Company Hackathon** (Terac × Whop, NYC, Oct 24 2026)
 - **Next.js 14** (App Router, streaming responses) on **Vercel**
 - **Claude Opus 4.8** (`@anthropic-ai/sdk`) — roast engine + CEO agent, adaptive thinking, prompt caching
 - **Whop API** — checkout, license validation, webhooks, revenue tracking
-- **Terac** — per-task human labor (QA + growth tasks)
+- **Terac** — human panel studies (product A/B) + per-task QA and growth tasks
+- **Exa** — competitive-landscape search grounding every roast
 
 ## Run it
 
@@ -57,7 +73,8 @@ npm run agent:loop           # CEO runs the company continuously
 | `WHOP_API_KEY` | License validation + sales reads (dev mode if unset) |
 | `NEXT_PUBLIC_WHOP_CHECKOUT_URL` | The buy button target |
 | `WHOP_WEBHOOK_SECRET` | HMAC verification for `/api/webhook` |
-| `TERAC_API_URL` / `TERAC_API_KEY` | Human-in-the-loop tasks |
+| `TERAC_API_URL` / `TERAC_API_KEY` | Human-in-the-loop tasks (studies run via the Terac MCP) |
+| `EXA_API_KEY` | Competitive-landscape search in roasts |
 | `DEMO_CODES` | Comma-separated bypass codes for judging |
 
 ## Where the humans are (and aren't)

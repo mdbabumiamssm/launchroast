@@ -103,7 +103,12 @@ Rewrite their hero: a headline (max 8 words), a subheadline (max 20 words), and 
 ## Shareable Burn
 One tweet-length line (<200 chars) they could screenshot and share — spicy but flattering enough that they'll actually post it. Mention it came from LaunchRoast.
 
-Rules: base everything on the provided page content only — never invent features or claims you can't see. If the page content is thin, roast that fact itself. No preamble before the first heading.`;
+If (and only if) a COMPETITIVE LANDSCAPE section is provided in the input, insert this section between "The Roast" and "10 Fixes":
+
+## Competitive Reality Check
+2-3 sentences on how real competitors (named, from the provided landscape) position against this page, and the one positioning gap this page must exploit or fix.
+
+Rules: base everything on the provided page content and competitive landscape only — never invent features, competitors, or claims you can't see. If the page content is thin, roast that fact itself. No preamble before the first heading.`;
 
 export function streamRoast(pageContent: string) {
   const client = new Anthropic();
