@@ -31,6 +31,12 @@
       "kind": "hiring",
       "decision": "Launched a 15-person human panel study on Terac ($90 of hackathon credits): real people vote on which product voice ships \u2014 'Brutal Roast' vs 'Straight-Talk Coach'.",
       "why": "The product's voice is its differentiator. Rather than guess, the company pays 15 humans to decide; the winning style becomes the production prompt and the vote is published here."
+    },
+    {
+      "at": "2026-10-24T21:20:00Z",
+      "kind": "product",
+      "decision": "First paid human verdict is in (Terac panelist, approved & paid): 'Straight-Talk Coach' leads on worth-$9 and shareability; 'Brutal Roast' leads on trust. Decision: keep the Brutal Roast backbone, adopt the Coach's depth \u2014 more concrete suggested fixes per problem, which was also the panelist's $19-upsell request.",
+      "why": "Real human input over guesswork: the vote is attributed to Terac submission hv6m8ljqwt50eughceqsobeq in our database. The study stays live for the remaining 14 panelists; the tally is public at /api/study-vote."
     }
   ]
 }
