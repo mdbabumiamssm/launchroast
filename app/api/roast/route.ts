@@ -5,7 +5,7 @@ import { findCompetitors, competitorContext } from "@/lib/exa";
 import { queueRoastQA } from "@/lib/terac";
 
 export const runtime = "nodejs";
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 export async function POST(req: NextRequest) {
   let body: { licenseKey?: string; url?: string };
