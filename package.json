@@ -1,0 +1,25 @@
+{
+  "name": "launchroast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LaunchRoast — an autonomous company that roasts landing pages for money. Built for the Zero-Human Company Hackathon.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "agent": "node agent/ceo.mjs",
+    "agent:loop": "node agent/ceo.mjs --loop"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

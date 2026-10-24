@@ -1,0 +1,24 @@
+{
+  "company": "LaunchRoast",
+  "founded": "2026-10-24T15:15:00Z",
+  "entries": [
+    {
+      "at": "2026-10-24T15:15:00Z",
+      "kind": "founding",
+      "decision": "Founded LaunchRoast: a $9 AI landing-page teardown service.",
+      "why": "200+ builders at this hackathon are shipping landing pages today and need conversion feedback instantly. Instant digital fulfillment means revenue can start within the hour."
+    },
+    {
+      "at": "2026-10-24T15:16:00Z",
+      "kind": "pricing",
+      "decision": "Set launch price at $9.",
+      "why": "Below the impulse-purchase threshold for the target customer (founders/hackers), high enough to signal the output is a product, not a gimmick."
+    },
+    {
+      "at": "2026-10-24T15:17:00Z",
+      "kind": "operations",
+      "decision": "Wired human-in-the-loop QA through Terac: every delivered roast files a $1 human review task.",
+      "why": "An autonomous company still needs taste checks. Humans are hired per-task as contractors; none are employed."
+    }
+  ]
+}
